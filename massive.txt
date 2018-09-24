@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main()
+{
+  char array[7] = {'S','t','r','i','n','g','\0'};
+  char string[] = {"Stroka\n"};
+  int number[4] = {10, 20, 50, 100};
+  number[0] = 10;
+  number[1] = 20;
+  number[2] = 50;
+  number[3] = 100;
+  for(int i=0; i<8; i++)
+    {
+      printf("%c", string[i]);
+    }
+  for(int j=0; j<7; j++)
+    {
+    printf("%c", array[j]);
+    }
+  printf("\n");
+  for(int j=0; j<7; ++j)
+    {
+      printf("%c\n", array[j]);
+    }
+  printf("\n");
+  printf("1 element = %d\n", number[0]);
+  printf("2 element = %d\n", number[1]);
+  printf("3 element = %d\n", number[2]);
+  printf("4 element = %d\n", number[3]);
+}
