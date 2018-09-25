@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+  int  n1=5,n2=8,n3=4;
+  char text='A',text1='a';
+  printf("5<8; (1-yes, 0-no) value = %d\n", n1<n2);
+  printf("8>4; (1-yes, 0-no) value = %d\n", n2>n3);
+  printf("A==a; (1-yes, 0-no) value = %d\n", text==text1);
+  printf("5!=8; (1-yes, 0-no) value = %d\n", n1!=n2);
+  n3++;
+  printf(" n3++ value n3 = %d\n",n3);
+  printf("5<=5; (1-yes, 0-no) value = %d\n", n1<=n3);
+  printf("8>=5; (1-yes, 0-no) value = %d\n", n2>=n1);
+  printf("5==8==5; (1-yes, 0-no) value = %d\n", n1==n2==n3);
+  
+
+}
