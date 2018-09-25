@@ -1,0 +1,22 @@
+#include<stdio.h>
+
+
+  
+  #define NUMBER 1000
+  #define LINE "___________"
+  #define AUTHOR "Peppa"
+  #define SYMBOL "!@#$%^&*()_+"
+#define MAS 15
+int main()
+{
+  const int DVA = 2;
+  const char TEXT[MAS] = {'b','>','i','n','j','u','s','t','i','c','e'};
+    printf("Const DVA %d\n", DVA);
+  printf("%c\n", TEXT[1]);
+  printf("Const NUMBER = %d\n", NUMBER);
+  printf("Const LINE = %s\n", LINE);
+  printf("\n\n\n\n\n");
+  printf("Const SYMBOL = %s\n", SYMBOL);
+  printf("Const AUTHOR = %s\n", AUTHOR);
+
+}
