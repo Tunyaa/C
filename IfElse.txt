@@ -1,0 +1,45 @@
+#include <stdio.h>
+int main()
+{
+  /*int number = 5;
+    (number ==10) ? printf("number = 10\n") : printf("Number =?\n");
+  ++number;
+    (number ==10) ? printf("number = 10\n") : printf("Number =?\n");
+   if (number == 10)
+          printf("True\n");
+    else if (number == 11)
+      printf("11\n");
+    else 
+    printf("False\n");
+  */
+
+  int num;
+  int a, b, c, x;
+  a=1, b=5, c=12, x=0;
+  int dm;
+  printf("print Number\n");
+  scanf("%d", &num);
+
+  if((num>=10) &&(num<20))
+    {
+      printf("10-20\n");
+      //a = num;
+    }
+  else if ((num>=20) && (num<50))
+    {
+      printf("20-50\n");
+      //b = num;
+    }  
+  else if (num>=50)
+    {
+      printf("50>\n");
+      //c = num;
+    }
+  else
+	 {
+	   printf("miss\n");
+	   //x = num;
+	 }
+  dm=a+b+c+x+num;
+  printf("%d\n", dm);
+}
