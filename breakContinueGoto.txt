@@ -1,0 +1,51 @@
+#include<stdio.h>
+int main()
+{
+  fprintf(stdout, "Use break/continue/goto\n");
+  for(int i=0; i<=10; i++)
+
+    {
+      if(i==5)
+	break  ;//stop func
+      fprintf(stdout,"%d", i);
+      
+    }
+  printf("Fin");
+  printf("\n");
+ 
+  for(int i=0; i<=10; i++)
+  {
+    if(i==5)
+      continue  ;//stop and start again on "if(i==5)"
+    if(i==6)
+      continue;
+    fprintf(stdout,"%d\n", i);
+
+  }
+  printf("\n");
+  printf("Fin2");
+  printf("\n");
+  for(int i=0; i<=10; i++)
+
+    {
+      if(i==5)
+        goto metka;
+      fprintf(stdout,"%d", i);
+
+    }
+
+  printf("propushenniy text");//text skip *goto
+ metka:
+  printf("Fin");
+  printf("\n");
+  printf("round in round\n");
+  for(int m=0; m<=2; m++)
+    {
+      for(int n=0; n<=2; n++)
+	fprintf(stdout, "table%d\n state%d\n", m, n);
+    }//table0 state0 table0 state1 table0 state2.....
+  
+ 
+  
+  printf("metka cpa6oma/|a");
+}
