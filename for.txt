@@ -1,0 +1,35 @@
+#include<stdio.h>
+int main()
+{
+   int a = 2, b = 99, c = 89;
+  
+   int der;
+   der = a*b*c*c*c;
+   printf("4isla ot1 do 10\n");
+   for(int i=0; i<=10; i++)
+    {
+      printf(" 0x%d", i);
+    }
+  
+   printf("\n");
+   int number[] = {1,1,1,1,1,1,1,1,1,};
+   for(int i=4; i<=9; i++)
+     {
+       printf("%d\n", number[i]);
+     }//1 1 1 1 1
+
+   printf("\n");
+
+   char massiv[7]={'q','w','e','r','t','y','\0'};
+   for(int j=0; j < strlen(massiv); j++)
+     {
+       printf("%c", massiv[j]);
+     }//qwerty
+   printf("\n");
+
+   char str[]={"My String"};
+   for(int j=0; j<strlen(str); j++)
+     {
+       printf("%c", str[j]);
+     }// My String
+}
