@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main()
+{
+  int num = 5;
+  num = (7*4 == 0 ) ? printf("10n") : printf("6\n");
+  printf("%d\n", num);
+  
+  int number, a = 10, b =4;
+  number = (a>b) ? a : b;
+  printf("%d\n", number);  
+
+  int cat = 1;
+  ++cat;
+  printf("On the window sits %d %s\n", cat, (cat == 1) ? "Cat" : "Cats");
+
+  
+  
+
+}
