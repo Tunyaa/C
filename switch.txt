@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+  fprintf(stdout, "Viberi film i uznayte opisanie:\n");
+  fprintf(stdout, "1. Terminator\n");
+  fprintf(stdout, "2. StarWars\n");
+  fprintf(stdout, "3. Hobbit\n");
+  fprintf(stdout, "4. Scarface\n");
+
+  int number = 0;
+  fscanf(stdin, "%d", &number);
+
+  switch(number) {
+  case 1: fprintf(stdout, "Ludi voyuut s robotami\n");
+    break;
+  case 2: fprintf(stdout, "jedai protiv sithov\n");
+    break;
+  case 3: fprintf(stdout, "frodo spasaet mir\n");
+    break;
+  case 4: fprintf(stdout, "Toni polu4aet vse\n");
+    break;
+  default: fprintf(stdout, "drugie filmi\n");
+    break;
+          }
+  fprintf(stdout, "spasibo za prosmotr1\n");
+}
