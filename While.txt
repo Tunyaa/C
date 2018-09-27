@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+  fprintf(stdout, "Input Number 0-10\n");
+  int number = 0;
+  char sym = 'y';
+  while(sym == 'y'  )
+    {
+      printf("repeat\n");
+      printf("Again?\ny/n ");
+      scanf("%s", &sym);
+    }
+  printf("lol\n");
+
+  do{
+    printf("repeat\n");
+    printf("Again?\ny/n ");
+    scanf("%s", &sym);
+  }while (sym =='y');
+  printf("lol\n");
+}
+
