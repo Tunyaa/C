@@ -1,0 +1,47 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   argument.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: yledner <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/09/30 13:05:49 by yledner           #+#    #+#             */
+/*   Updated: 2018/09/30 13:54:51 by yledner          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+
+#include <stdio.h>
+#define SIZE 30
+
+void string(char str[]);
+int sum_number(int num1, int num2);
+int cube(int x);
+
+int main()
+		
+{
+	int itogo, num1, num2, cu;
+	num1 = 50; num2 = 40; cu=5;
+	char str[SIZE] = "Я функция string\n";
+	string(str);
+	itogo = sum_number(num1, num2);
+	fprintf(stdout, "Func string: %d\n", itogo);
+	fprintf(stdout, "Func string: %d\n", cube(cu));// 'cu' занимает место переменной'x'
+}
+
+    void string (char str[])
+{
+	fprintf(stdout, "Func string: %s", str);
+}
+
+
+int sum_number(int num1, int num2)
+{
+	return num1+num2;	
+}
+
+int cube(int x)
+{
+	return (x*x)*x; // заменяет 'х' на значение переменной используемой в функции
+}
