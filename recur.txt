@@ -1,0 +1,34 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   recur.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: yledner <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/09/30 14:35:12 by yledner           #+#    #+#             */
+/*   Updated: 2018/09/30 15:00:26 by yledner          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <stdio.h>
+
+void recur(int number); //прототип функции
+
+int main()
+{
+	int number;
+	fprintf(stdout, "Введите число для рекурсии:\n");
+	fscanf(stdin, "%d", &number);
+	recur(number);
+	puts("Рекурсия завершена\n");
+}
+
+void recur(int number)
+{
+	fprintf(stdout,"%d\n", number);
+	--number;// вывод чисел от введенного числа до 0
+	if(number<0)
+		return;
+	else
+		recur(number);
+}
