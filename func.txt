@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+void print_hello(); // прототип функции. вызов функции
+int add_number();// вызов функции
+char str();
+
+int main()
+{
+  print_hello();
+  int num = add_number();//второй вариант вызова
+  //заменить add_number на переменную num  \/  2й вариант вызова
+  fprintf(stdout, "Return number: %d\n", add_number()/*<<месмто вызова функции  1й вариант вызова*/);
+  str();
+}
+
+void print_hello(void)
+{
+  fprintf(stdout, "Hello Function\n");
+
+}
+
+int add_number()
+{
+  int a=10, b=35;
+  int c=a+b;
+
+  return  a+b;//выводит результат в мето вызова>>
+  return c;// 2й вариант вывода 
+}
+
+char str()
+{
+  int a=10, b=55;
+  return fprintf(stdout, "Return str: %d\n", a+b);
+}
+
