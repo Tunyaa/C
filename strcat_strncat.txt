@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<string.h>
+#define SIZE 200
+
+int main(int argc, char const *argv[])
+{
+	char str1[SIZE] = "Text1 >";
+	char str2[] = "<Text2";
+	char str3[SIZE] = "TEXT3 tretr>e";
+	char str4[] = "<TEXT4 treter C";
+	char str5[SIZE] = "tretreTEXT5>";
+	char str6[] = "<MacOsTEX Text 6";
+	strcat(str1, str2);// совмещает str1 str2 всю строку
+	fputs(str1, stdout);
+
+	strncat(str3, str4,26); //совмещает str3 str4  /количество символов
+	fprintf(stdout, "%s", str3);
+
+	strncat(str5, (str6+4), 13);//совмещает str5 str6(+с какой строки начать) сколько символов
+	fprintf(stdout, "%s", str5);
+}
