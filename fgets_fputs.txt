@@ -1,0 +1,25 @@
+#include<stdio.h>
+#define SIZE 51
+
+int main()
+{
+	char massiv[SIZE];
+	printf("Введите строку: ");
+//	scanf("%[^\n]", massiv);
+//	gets(massiv);
+	fgets(massiv, SIZE, stdin); // записывает текст в массив
+	fputs(massiv, stdout);  // выводит текст из массива
+//	printf("%s\n", massiv);
+
+	char symbol = 'A';
+	while (symbol<='Z') //вывдо быкв от 'A' до  'Z'
+	{
+		fprintf(stdout, "%c", symbol);
+		symbol++;
+	}
+	puts("\n");
+
+	char symbol_t = 'T';  //по таблице символов маленькая буква по значению больше большой на 32
+	symbol_t += 32;
+	printf("%c\n", symbol_t);
+}
