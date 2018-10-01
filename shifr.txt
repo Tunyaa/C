@@ -1,0 +1,26 @@
+#include<stdio.h>
+#define SIZE_STR 100
+
+void string(char *p_string);
+
+
+	int main()
+{
+	char str[SIZE_STR];
+	char *p_string = str;
+	printf("введите строку для шифрования: \n");
+	fgets(str, SIZE_STR, stdin);//ввод строки из консоли
+	string(str);
+	fprintf(stdout, "Зашифрованная строка: %s\n", str);
+	string(str);
+		printf("%s\n", str);
+}
+
+void string(char *p_string)
+{
+	while(*p_string)
+	{
+	*p_string = *p_string ^ 31;
+	*p_string++;
+	}
+}
