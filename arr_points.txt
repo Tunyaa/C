@@ -1,0 +1,41 @@
+#include<stdio.h>
+#define  SIZE_NUMBER 5
+
+int main()
+{
+	int number[SIZE_NUMBER] = {1,2,3,4,5};
+	int *p_num1 = &number[0];
+	int *p_num2 = &number[1];
+	int *p_num3 = &number[2];
+	int *p_num4 = &number[3];
+	int *p_num5 = &number[4];
+
+	int *p_numbers[SIZE_NUMBER] ={p_num1,p_num2,p_num3,p_num4,p_num5};
+	int i=0;
+	while( i<SIZE_NUMBER)
+	{
+		printf("Position %dAdress[%p], value %d\n", i, p_numbers[i], *p_numbers[i]);
+		i++;
+	}
+
+	char *p_mass_string[3] = {"324234wsdewfweg", "wgAout", "rwer4gwhFDo"};
+	int q=0;
+	while(q<3)
+	{
+		
+		printf("%s\n", p_mass_string[q]);
+		q++;
+	}
+}
+
+
+/* 
+Position 0Adress[0x7fff5cb28af0], value 1
+Position 1Adress[0x7fff5cb28af4], value 2
+Position 2Adress[0x7fff5cb28af8], value 3
+Position 3Adress[0x7fff5cb28afc], value 4
+Position 4Adress[0x7fff5cb28b00], value 5
+324234wsdewfweg
+wgAout
+rwer4gwhFDo
+*/
