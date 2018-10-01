@@ -1,0 +1,34 @@
+#include<stdio.h>
+
+void func1(int *p_number);
+void func2(int *p_number);
+int cube(int x);
+
+
+
+int main()
+{
+	int  number = 100;
+	int *p_number = &number;
+	fprintf(stdout, "Number = %d\n", number);
+	fprintf(stdout, "p_number = %d\nAdress p_number %p\n",
+			*p_number, p_number);
+	func2(p_number);
+	fprintf(stdout, "p_number = %d\nNumber = %d\n",*p_number, number);
+	fprintf(stdout, "Number = %d\n",cube(*p_number));
+}
+
+void func1(int *p_number)
+{
+	*p_number = *p_number + *p_number;
+}
+
+void func2(int *p_number)
+{
+	*p_number = *p_number / *p_number;
+}
+
+int cube(int x)
+{
+	return x+x;
+}
