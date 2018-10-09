@@ -1,0 +1,24 @@
+#include<stdio.h>
+
+#define LEN 100
+
+
+
+int main()
+{
+  char str[LEN];
+  FILE *file_ptr; //create file
+  file_ptr = fopen("new_file.txt", "r+a");
+  // r - read; w - write; a - add text;r+\w+\a+ - read or writeonly. in .txt only;rb\wb binar.
+  if(file_ptr != NULL)
+    {
+      printf("File create\n");
+      while(fgets(str, LEN, file_ptr)); //get info
+      fprintf(stdout,"%s\n", str);
+    }
+  else
+    {
+      printf("Not create");
+      return(1);
+    }
+}
