@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+typedef struct
+{
+  char *name;
+  char *pop;
+}City;
+
+int main()
+{
+  City ny, la,ch,*ptr;
+
+  ny.name = "NewYork";
+  ny.pop = "8,456,234";
+  printf("\n%s, Population %s.\n",ny.name, ny.pop);
+
+  ptr = &la;
+  ptr -> name = "Los Angeles";
+  ptr -> pop = "3,456,423";
+  printf("\n %s Population %s\n", la.name, la.pop);
+
+  ptr = &ch;
+  ptr->name = "Chicago";
+  ptr->pop = "3,342,544";
+  printf("\n%s Population %s\n", ptr->name, ptr->pop);
+}
